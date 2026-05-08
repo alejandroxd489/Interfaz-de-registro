@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Registro de Usuario</h1>
+</header>
+
+<main>
+
+<div class="contenedor">
+
+    <img 
+    src="https://via.placeholder.com/150"
+    alt="Perfil"
+    class="perfil">
+
+    <form id="formulario">
+
+        <label>Nombre</label>
+        <input type="text" required>
+
+        <label>Correo electrónico</label>
+        <input type="email" required>
+
+        <label>Contraseña</label>
+        <input 
+        type="password"
+        id="password"
+        minlength="8"
+        required>
+
+        <label>Fecha de nacimiento</label>
+        <input type="date" required>
+
+        <label>Color favorito</label>
+        <input type="color">
+
+        <label>País</label>
+
+        <input 
+        list="paises"
+        placeholder="Selecciona tu país"
+        required>
+
+        <datalist id="paises">
+            <option value="México">
+            <option value="Argentina">
+            <option value="Colombia">
+            <option value="Chile">
+            <option value="España">
+            <option value="Perú">
+        </datalist>
+
+        <button type="submit">
+            Registrarse
+        </button>
+
+    </form>
+
+    <div id="mensaje"></div>
+
+</div>
+
+</main>
+
+<footer>
+    <p>Proyecto HTML5 - Registro Responsivo</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
